@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #grid
+\*------------------------------------*/
+
+   @mixin grid($col, $rows, $gap) {
+    display: grid;
+    width: 100%;
+    padding: 0;
+    grid-template-columns: $col;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+}
+
+/*------------------------------------*\
+  #mixin
+\*------------------------------------*/
+@mixin grid__item($col-start, $col-end, $row-start, $row-end) {
+    grid-column-start: $col-start;
+    -ms-grid-column:$col-start;
+    grid-column-end: $col-end;
+    grid-row-start: $row-start;
+    -ms-grid-row:$row-start;
+    grid-row-end: $row-end;
+}

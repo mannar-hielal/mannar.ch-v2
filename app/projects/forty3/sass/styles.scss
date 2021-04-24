@@ -1,0 +1,329 @@
+$dark-blue: #292e4b; // here you can change the color of the background theme: currently its dark blue
+
+
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.header, .grid, .article, .form, .footer {
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container, .grid-container, .article-container, .form-container, .footer-container {
+  width: 600px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.links li {
+  display: inline;
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.links {
+  margin-top: 10px;
+  height: 20px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 4px;
+}
+
+.forty {
+  background-color: white;
+  color: $dark-blue;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.tagline, .paragraph {
+  font-weight: 100;
+  font-size: 17px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.tagline p {
+  line-height: 150%;
+}
+
+.hline {
+  width: 600px;
+  height: 2px;
+  background: white;
+  margin-top: 15px;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  border: 2px solid white;
+  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica;
+  text-decoration: none;
+  color: white;
+}
+
+a.button:before {
+  content: "GET STARTED";
+}
+
+.grid-container {
+  height: 900px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.writings h1, .h1 {
+  font-size: 30px;
+  font-size: 2rem;
+  margin: 10px 10px;
+}
+
+.writings p {
+  font-size: 10px;
+  margin: 10px 10px;
+  letter-spacing: 2px;
+}
+
+.writings .hline {
+  width: 170px;
+  height: 2px;
+  background: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.grid {
+  background-color: white;
+}
+
+.item {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  background-blend-mode: color-burn;
+}
+
+.item1 {
+  background-image: url(../images/item1.png);
+  background-color: #73bfd9;
+}
+
+.item2 {
+  background-image: url(../images/item2.jpg);
+  background-color: #e69187;
+}
+
+.item3 {
+  background-image: url(../images/item3.jpg);
+  background-color: #7e96d2;
+}
+
+.item4 {
+  background-image: url(../images/item4.jpg);
+  background-color: #8075b6;
+}
+
+.item5 {
+  background-image: url(../images/item5.jpg);
+  background-color: #daaf86;
+}
+
+.item6 {
+  background-image: url(../images/item6.jpg);
+  background-color: #77ad95;
+}
+
+.article-container {
+  height: 420px;
+  justify-content: space-around;
+}
+
+.article-container .hline {
+  width: 200px;
+  height: 2px;
+  margin-top: 10px;
+}
+
+.button img {
+  margin-left: 20px;
+}
+
+.form {
+  background-color: #21253c;
+  height: 450px;
+  border-bottom: 1px solid $dark-blue;
+}
+
+.nameandemail-container, .message-container, .button-container, .footer-container {
+  margin: 30px 0 0px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nameandemail-container label, .nameandemail-container input {
+  width: 290px;
+  margin: 10px 0px 10px 0;
+}
+
+.message-container {
+  margin: 20px 0 20px 0;
+  height: 230px;
+}
+
+.message-container textarea {
+  display: block;
+  width: 600px;
+  height: 180px;
+  background-color: $dark-blue;
+}
+
+.message-container label {
+  display: block;
+  margin: 0px 0 0px 0;
+  height: 30px;
+}
+
+.button-container {
+  margin: 10px 0 10px 0;
+  justify-content: flex-start;
+}
+
+input {
+  background-color: $dark-blue;
+  height: 40px;
+}
+
+input[type=reset], input[type=submit] {
+  color: white;
+  border: 2px solid white;
+  width: 100px;
+  height: 50px;
+}
+
+input[type=submit] {
+  width: 160px;
+  margin-right: 18px;
+  color: $dark-blue;
+  background-color: white;
+}
+
+.footer-container {
+  margin: 40px 0;
+  height: 50px;
+  justify-content: flex-start;
+}
+
+.footer li {
+  list-style-type: none;
+  font-size: 15px;
+  margin: 10px 0 10px 0;
+}
+
+.footer a:link {
+  color: white;
+}
+
+.footer a:visited {
+  color: #e69187;
+}
+
+.footer-container img {
+  padding-right: 12px;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+  .header-container, .grid-container, .article-container, .form-container, .footer-container {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container {
+    flex-direction: row;
+  }
+  .item {
+    height: 50vw;
+    width: 50%;
+  }
+  .item1 {
+    background: #73bfd9 url(../images/item1.png) no-repeat 0 0;
+    background-size: cover;
+  }
+  .item2 {
+    background: #e69187 url(../images/item2.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .item3 {
+    background: #7e96d2 url(../images/item3.jpg) no-repeat 0 0;
+    background-size: cover;
+    /*background-image: url(images/small/item33.jpg);*/
+    /*background-color: #7e96d2;*/
+  }
+  .item4 {
+    background: #8075b6 url(../images/item4.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .item5 {
+    background: #daaf86 url(../images/item5.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .item6 {
+    background: #77ad95 url(../images/item6.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .form, .grid {
+    height: auto;
+  }
+  .nameandemail-container {
+    flex-wrap: wrap;
+  }
+  .nameandemail-container input {
+    width: 80%;
+  }
+  .message-container {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+  }
+  .button-container {
+    flex-wrap: wrap;
+  }
+  .links {
+    margin-top: 10px;
+    height: 20px;
+  }
+  .form-line {
+    width: 100%;
+  }
+  p, h1, label {
+    padding: 0 10px;
+  }
+}

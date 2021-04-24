@@ -1,0 +1,158 @@
+@media screen and (min-width : 561px)and(max-width : 1024px){
+    //styling the header
+    header{
+        h1{
+            font-size: 7em;
+        }
+        h2{
+            font-size: 1em;
+        }
+    }
+
+    // styling the site navigation menu
+    .nav--main{
+        width: 100%; 
+    }
+    .list--inline {
+        li {
+            display: inline-block;
+            padding: 1.5em 0.5em;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+
+    .sticky{
+        left:0;
+    }
+
+    .main-center {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    // styling section "why you'll love Antarctica"
+.section--why{
+    .icons__list {
+        .nav__list__item {
+            padding: 12px 4%;
+            transition: all .1s ease-in-out;
+            &:hover {
+                transform: scale(1.4,1.4);
+            }
+        }
+    }
+}
+
+
+        //styling  section what
+        .section--what {
+            .text-image-block {
+                display: block;
+                position: static;
+            }
+            img {
+                max-width: 100%;
+            }
+            .text-image-block__image-item {
+                background: url("../img/pic01.png") no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                margin-bottom: 48px;
+            }
+            .text-image-block__image-item2 {
+                background: url("../img/siegel.png") no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                margin-bottom: 48px;
+            } 
+        }
+        figure {
+            width: 100%;
+            margin: 0;
+        }
+        .popped-sticker {
+            position: static;
+            z-index: 0;
+            width: 100%;
+            padding: 0;
+            p {
+                padding: 0 24px;
+            }
+            h2 {
+                padding-left: 24px;
+                margin-top: 24px;
+            }
+        }
+
+
+        //styling section "slideshow"
+        .section--slideshow {
+            img {
+                width: 100%;
+            }
+        }
+        .slideshow__element--prev{
+            left: -2%;
+        }
+        .slideshow__element--next{
+            right:-2%;
+        }
+
+        //styling section "grid" 
+    .grid__item {
+        display: block;
+    }
+    .grid__item--img {
+        background: url("../img/siegel.png") no-repeat center top;
+        background-size: cover;
+        width: 100%;
+        height: 528px;
+    }
+    .grid__item--text {
+        width: 100%;
+    }
+    .grid__item--map {
+        width: 100%;
+        height: 528px;
+    }
+    .grid__item--form,
+    .grid__item--text {
+        padding: 60px 0;
+        form {
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    //styling the footer
+    footer {
+        font-size: 80%;
+        margin: 0 10px;
+    }
+    .block-container {
+        flex-wrap:wrap;
+        padding-top: 24px;
+    }
+    .block-container__item {
+        width: 20%;
+        margin:0 12px;
+    }
+    .container--2x {
+        width: 100%;
+        h1 {
+            margin-bottom: 24;
+        }
+    }
+    .footer__copy-rights {
+        padding-top: 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+    

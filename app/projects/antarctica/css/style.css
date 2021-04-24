@@ -1,0 +1,1040 @@
+@charset "UTF-8";
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+body {
+  color: #4E5665;
+  max-width: 1650px; }
+
+.list--inline {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 0px; }
+  .list--inline li {
+    display: inline-block;
+    padding: 1.5em 0.75em; }
+
+.list--block {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px; }
+  .list--block li {
+    display: block; }
+
+.nav__list__item a {
+  text-decoration: none;
+  color: #4E5665; }
+  .nav__list__item a:hover {
+    color: #089BD9; }
+
+.section {
+  border-bottom: 1px solid silver;
+  padding-bottom: 4.5em; }
+  .section p {
+    text-align: left; }
+
+.popped-sticker {
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  width: 48%;
+  top: 70px;
+  text-align: left;
+  padding: 4%;
+  margin: 12px 0; }
+  .popped-sticker h2 {
+    padding-left: 0px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+.readmore a {
+  text-decoration: none;
+  color: #089BD9;
+  font-weight: bold; }
+  .readmore a::after {
+    content: '▸'; }
+
+header {
+  background: url("../img/header.png") no-repeat center top;
+  min-width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative; }
+  header h1 {
+    font-size: 13.5em;
+    text-shadow: 2px 2px 8px black; }
+  header h2 {
+    position: absolute;
+    bottom: 10px; }
+
+.nav--main {
+  overflow: hidden;
+  margin: 0 auto;
+  border-bottom: 1px solid silver;
+  width: 100%; }
+  .nav--main .nav--burger {
+    display: none; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  z-index: 2;
+  background-color: #4E5665;
+  -webkit-box-shadow: 0px 0px 18px 0px black;
+          box-shadow: 0px 0px 18px 0px black;
+  border-bottom: none; }
+  .sticky li a {
+    color: white; }
+
+.main-center {
+  width: 58.7%;
+  margin: 0 auto;
+  text-align: center; }
+
+.section--why h1 {
+  padding-top: 4.6em; }
+
+.section--why .icons__list {
+  width: 100%;
+  margin: 0 auto; }
+  .section--why .icons__list .nav__list__item {
+    padding: 24px 4%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .section--why .icons__list .nav__list__item h5 {
+      font-weight: 100; }
+    .section--why .icons__list .nav__list__item:hover {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5); }
+    .section--why .icons__list .nav__list__item img {
+      padding-bottom: 12px; }
+
+.section--what {
+  border-bottom: none; }
+  .section--what h1 {
+    padding-top: 1em; }
+
+figure {
+  margin: 10px 0; }
+
+.text-image-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .text-image-block img {
+    max-width: 58.7%; }
+
+.flex-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.flex-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.text-image-block--left {
+  left: 0; }
+
+.text-image-block--right {
+  right: 0; }
+
+.text-image-block__image-item {
+  background: url("../img/pic01.png") no-repeat center top;
+  background-size: cover;
+  width: 77%;
+  height: 428px; }
+
+.text-image-block__image-item2 {
+  background: url("../img/siegel.png") no-repeat center top;
+  background-size: cover;
+  width: 77%;
+  height: 428px; }
+
+.blur-me {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
+.section--king {
+  position: relative; }
+  .section--king p {
+    margin-bottom: 0; }
+  .section--king figure {
+    margin: 48px 0; }
+    .section--king figure img {
+      width: 50%;
+      height: auto; }
+  .section--king button {
+    margin-bottom: 24px; }
+
+.figure__img-element {
+  width: 40%;
+  position: relative;
+  margin: 0 auto; }
+
+.section--king h2 {
+  color: #089BD9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  margin: 0; }
+
+.section--king h1 {
+  margin-bottom: 0; }
+
+.tooltip__dot {
+  background: url("../img/icons/hover-dot.png") no-repeat center top;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.tooltip__dot.animate {
+  -webkit-transform: scale(2);
+          transform: scale(2); }
+
+.tooltip__dot--down {
+  position: absolute;
+  left: 145px;
+  bottom: 50px; }
+
+.tooltip__dot--middle {
+  position: absolute;
+  right: 100px;
+  bottom: 200px; }
+
+.tooltip__dot--top {
+  position: absolute;
+  left: 110px;
+  top: 60px; }
+
+.tooltip__info {
+  width: 30%;
+  background-color: #4E5665;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 24px;
+  position: absolute;
+  z-index: 1; }
+
+.hide {
+  display: none; }
+
+.tooltip__info--position-bottom {
+  bottom: 105px;
+  left: 48px; }
+
+.tooltip__info--position-middle {
+  bottom: 205px;
+  right: 0; }
+
+.tooltip__info--position-top {
+  top: 105px; }
+
+.visible {
+  visibility: visible; }
+
+.section--slideshow img {
+  width: 65%; }
+
+.section--slideshow h1 {
+  margin-top: 56px; }
+
+.slideshow-container {
+  position: relative; }
+
+.slideshow__item {
+  display: none; }
+
+.slideshow__item.active {
+  display: block; }
+
+.slideshow__icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%; }
+  .slideshow__icon a {
+    position: relative;
+    top: 7px;
+    font-size: 1.5em; }
+
+.slideshow__element--prev {
+  left: 15%; }
+
+.slideshow__element--next {
+  right: 15%; }
+
+.grid__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.grid__item--switcher div:first-child {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.grid__item--img {
+  background: url("../img/siegel.png") no-repeat center top;
+  background-size: cover;
+  width: 50%; }
+
+.grid__item--map {
+  width: 50%; }
+  .grid__item--map iframe {
+    width: 100%;
+    height: 100%; }
+
+.grid__item--text, .grid__item--form {
+  background-color: #089BD9;
+  text-align: left;
+  color: white;
+  padding: 120px 0;
+  width: 50%; }
+  .grid__item--text p, .grid__item--form p,
+  .grid__item--text h2, .grid__item--form h2 {
+    padding: 0 16%; }
+
+.grid__item--form form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 62.5%;
+  margin: 0 auto; }
+  .grid__item--form form label,
+  .grid__item--form form input,
+  .grid__item--form form textarea {
+    background-color: #089BD9;
+    border: 0;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+  .grid__item--form form input,
+  .grid__item--form form textarea {
+    border-bottom: 1px solid white;
+    width: 100%; }
+  .grid__item--form form button {
+    border-radius: 25px;
+    font-size: 1em;
+    color: #089BD9;
+    margin-top: 24px;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    width: 38%;
+    height: 48px;
+    background-color: white;
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear; }
+  .grid__item--form form button:hover {
+    background-color: #4E5665; }
+  .grid__item--form form button:active {
+    color: white; }
+
+.trans:hover {
+  background-color: #4E5665; }
+
+footer {
+  font-size: 0.7em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.block-container {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left; }
+
+.block-container__item {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.container--2x {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+  color: #37C491; }
+  .container--2x h1 {
+    margin-top: 0;
+    line-height: 1; }
+
+.container--spacing a {
+  padding-left: 10px; }
+
+.footer__copy-rights {
+  padding-top: 24px;
+  text-align: center; }
+
+html, .root {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100; }
+
+body, .article {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+  font-weight: inherit; }
+
+h1, .h1 {
+  font-size: 31px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: inherit; }
+
+h2, .h2 {
+  font-size: 25px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: inherit; }
+
+h3, .h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: inherit; }
+
+h4, .h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 0px; }
+
+h5, .h5 {
+  font-size: 12.8px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: inherit; }
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-weight: inherit; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: inherit; }
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0; }
+
+a, b, i, strong, em, small, code {
+  line-height: 0; }
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+@media screen and (max-width: 560px) {
+  html,
+  .root {
+    font-size: 16px;
+    line-height: 24px; }
+  body,
+  .article {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 560px;
+    margin: auto; }
+  h1,
+  .h1 {
+    font-size: 23px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 48px; }
+  h2,
+  .h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  h3,
+  .h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px; }
+  h4,
+  .h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px; }
+  h5,
+  .h5 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px; }
+  p,
+  ul,
+  ol,
+  pre,
+  table,
+  blockquote {
+    margin-top: 0px;
+    margin-bottom: 48px; }
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  /* Let's make sure all's aligned */
+  hr,
+  .hr {
+    border: 1px solid;
+    margin: -1px 0; }
+  a,
+  b,
+  i,
+  strong,
+  em,
+  small,
+  code {
+    line-height: 0; }
+  sub,
+  sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  sup {
+    top: -0.5em; }
+  sub {
+    bottom: -0.25em; }
+  header {
+    max-height: 400px; }
+    header h1 {
+      font-size: 4em; }
+    header h2 {
+      bottom: 0px;
+      font-size: 18px; }
+  nav.nav--main {
+    width: 100%;
+    border-bottom: none;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 0; }
+    nav.nav--main .nav--burger {
+      padding: 10px;
+      font-size: 34px;
+      display: block;
+      color: white;
+      background-color: #4E5665; }
+    nav.nav--main .nav__list {
+      background-color: #4E5665; }
+    nav.nav--main .nav__list.list--inline {
+      display: none; }
+    nav.nav--main .nav__list__item {
+      display: block;
+      padding: 13px 3%;
+      text-align: center;
+      border-bottom: 1px solid black; }
+    nav.nav--main .nav__list__item:last-child {
+      border-bottom: none; }
+    nav.nav--main a {
+      color: white; }
+  .sticky {
+    left: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #4E5665;
+    z-index: 0; }
+  .main-center {
+    width: 95%; }
+  .section--why h1 {
+    padding-top: 52px; }
+  .section--why .icons__list {
+    width: 90%; }
+    .section--why .icons__list .nav__list__item {
+      padding: 12px 12%; }
+  .section--what .text-image-block {
+    display: block;
+    position: static; }
+  .section--what img {
+    max-width: 100%; }
+  .section--what .text-image-block__image-item {
+    background: url("../img/pic01.png") no-repeat center top;
+    background-size: cover;
+    width: 100%; }
+  .section--what .text-image-block__image-item2 {
+    background: url("../img/siegel.png") no-repeat center top;
+    background-size: cover;
+    width: 100%; }
+  figure {
+    width: 100%;
+    margin: 0; }
+  .popped-sticker {
+    position: static;
+    z-index: 0;
+    width: 100%;
+    padding: 0; }
+    .popped-sticker p {
+      padding: 0 10px; }
+    .popped-sticker h2 {
+      padding-left: 10px;
+      margin-top: 48px; }
+  .section--king figure img {
+    width: 80%; }
+  .section--king figure button {
+    top: -25px;
+    right: 0px; }
+  .section--king .tooltip__dot--down {
+    position: absolute;
+    left: 80px;
+    bottom: 45px; }
+  .section--king .tooltip__dot--middle {
+    position: absolute;
+    right: 30px;
+    bottom: 175px; }
+  .section--king .tooltip__dot--top {
+    position: absolute;
+    left: 35px;
+    bottom: 255px; }
+  .section--king figure button {
+    top: 100px; }
+  .section--slideshow figure {
+    margin: 0; }
+  .section--slideshow img {
+    width: 90%; }
+  .section--slideshow .slideshow__element--prev {
+    left: 0%; }
+  .section--slideshow .slideshow__element--next {
+    right: 0%; }
+  .grid__item {
+    display: block; }
+  .grid__item--img {
+    background: url("../img/siegel.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 528px; }
+  .grid__item--text, .grid__item--form {
+    width: 100%; }
+  .grid__item--map {
+    width: 100%;
+    height: 528px; }
+  .grid__item--form,
+  .grid__item--text,
+  .grid__item--form {
+    padding: 60px 0; }
+    .grid__item--form form button,
+    .grid__item--text form button, .grid__item--form form button {
+      width: 100%; }
+  footer {
+    font-size: 80%;
+    margin: 0 10px; }
+  .block-container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-top: 24px; }
+  .block-container__item:nth-child(2),
+  .block-container__item:nth-child(3) {
+    border-bottom: 1px solid silver; }
+  .block-container__item {
+    width: 40%;
+    margin: 0 12px; }
+  .container--2x {
+    width: 100%; }
+    .container--2x h1 {
+      margin-bottom: 24; }
+  .footer__copy-rights {
+    padding-top: 0; }
+    .footer__copy-rights p {
+      margin-bottom: 0; } }
+
+@media screen and (min-width: 561px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 7em; }
+  header h2 {
+    font-size: 1em; }
+  .nav--main {
+    width: 100%; }
+  .list--inline li {
+    display: inline-block;
+    padding: 1.5em 0.5em; }
+  .list--inline a {
+    font-size: 14px; }
+  .sticky {
+    left: 0; }
+  .main-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+  .section--why .icons__list .nav__list__item {
+    padding: 12px 4%;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out; }
+    .section--why .icons__list .nav__list__item:hover {
+      -webkit-transform: scale(1.4, 1.4);
+              transform: scale(1.4, 1.4); }
+  .section--what .text-image-block {
+    display: block;
+    position: static; }
+  .section--what img {
+    max-width: 100%; }
+  .section--what .text-image-block__image-item {
+    background: url("../img/pic01.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 48px; }
+  .section--what .text-image-block__image-item2 {
+    background: url("../img/siegel.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 48px; }
+  figure {
+    width: 100%;
+    margin: 0; }
+  .popped-sticker {
+    position: static;
+    z-index: 0;
+    width: 100%;
+    padding: 0; }
+    .popped-sticker p {
+      padding: 0 24px; }
+    .popped-sticker h2 {
+      padding-left: 24px;
+      margin-top: 24px; }
+  .section--slideshow img {
+    width: 100%; }
+  .slideshow__element--prev {
+    left: -2%; }
+  .slideshow__element--next {
+    right: -2%; }
+  .grid__item {
+    display: block; }
+  .grid__item--img {
+    background: url("../img/siegel.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 528px; }
+  .grid__item--text, .grid__item--form {
+    width: 100%; }
+  .grid__item--map {
+    width: 100%;
+    height: 528px; }
+  .grid__item--form,
+  .grid__item--text,
+  .grid__item--form {
+    padding: 60px 0; }
+    .grid__item--form form button,
+    .grid__item--text form button, .grid__item--form form button {
+      width: 100%; }
+  footer {
+    font-size: 80%;
+    margin: 0 10px; }
+  .block-container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-top: 24px; }
+  .block-container__item {
+    width: 20%;
+    margin: 0 12px; }
+  .container--2x {
+    width: 100%; }
+    .container--2x h1 {
+      margin-bottom: 24; }
+  .footer__copy-rights {
+    padding-top: 0; }
+    .footer__copy-rights p {
+      margin-bottom: 0; } }

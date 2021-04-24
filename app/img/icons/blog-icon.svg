@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-iPad-768-X-864" transform="translate(-93.000000, -369.000000)" fill="#383140">
+            <g id="blog" transform="translate(34.000000, 324.000000)">
+                <g id="the-blog-icon" transform="translate(59.000000, 45.000000)">
+                    <g id="Group-5">
+                        <g id="icon-copy-2" transform="translate(0.300000, 0.000000)">
+                            <path d="M31.6235294,3.95294118 L31.6235294,5.92941176 L3.37647059,5.92941176 C2.60327194,5.92941176 1.97647059,6.55621311 1.97647059,7.32941176 L1.97647059,44.0588235 C1.97647059,44.8320222 2.60327194,45.4588235 3.37647059,45.4588235 L40.1058824,45.4588235 C40.879081,45.4588235 41.5058824,44.8320222 41.5058824,44.0588235 L41.5058824,15.8117647 L43.4823529,15.8117647 L43.4823529,46.0352941 C43.4823529,46.8084928 42.8555516,47.4352941 42.0823529,47.4352941 L1.4,47.4352941 C0.62680135,47.4352941 9.46895252e-17,46.8084928 0,46.0352941 L0,5.35294118 C2.12575652e-15,4.57974253 0.62680135,3.95294118 1.4,3.95294118 L31.6235294,3.95294118 Z" id="Rectangle-197"></path>
+                            <polygon id="Rectangle-200" transform="translate(27.730535, 20.198877) rotate(-315.000000) translate(-27.730535, -20.198877) " points="23.7775936 -3.92811051 23.7775936 35.6013013 27.7305348 44.3258645 31.6834759 35.6013013 31.6834759 -3.92811051"></polygon>
+                            <rect id="Rectangle-247" transform="translate(39.529412, 7.905882) rotate(45.000000) translate(-39.529412, -7.905882) " x="36.5647059" y="6.91764706" width="5.92941176" height="1.97647059"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

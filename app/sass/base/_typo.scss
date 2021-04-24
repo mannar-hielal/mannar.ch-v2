@@ -1,0 +1,134 @@
+//typography
+$font-size-default: 18px; //1
+$font-weight-default:300; //light
+$line-height-default:27px; //1.5
+$margin-default:54px; //3
+$font-family-default:'Montserrat';
+$font-family-fancy:'Libre Baskerville';
+$font-family-logo:'Indie Flower','Segoe Print';
+$font-family-title:'Libre Baskerville';
+
+
+html,
+body {
+    font-size: $font-size-default;
+    font-family: $font-family-default;
+    color: $onyx;
+    line-height: $line-height-default;
+    font-weight: $font-weight-default;
+}
+
+.h1,
+h1 {
+    font-size: 3.388em; //61
+    line-height: 1.32em; //81
+    font-family: $font-family-logo;
+    margin-top: 0.44em; //27
+    margin-bottom: 0.88em; //54
+}
+
+.header__logo {
+    // font-size: 3.388em; //61
+    font-size: 2.27em; //41px
+    line-height: 1.14em; //31px
+    font-family: $font-family-logo;
+    margin-bottom: 0.44em; //27px
+    color: $bg;
+    text-align: center;
+}
+
+.header--full-width .header__logo {
+    font-size: 2.27em; //41
+    line-height: 1em; //27px
+    margin: 0 0 0 14px;
+}
+
+.h2,
+h2 {
+    font-size: 2.27em; //41px
+    line-height: 1.31em; //54px
+    padding-top: 0.65em; //27px
+    padding-bottom: 0.65em; //27px
+}
+
+h3,
+.h3,
+.title {
+    font-size: 1.5em; //27px
+    line-height: 1.3em; //27px
+    margin-top: 1.3em; //27px
+    margin-bottom: 0.7em;
+    font-family: $font-family-title;
+}
+
+.h4,
+h4,
+h5,
+.h5,
+p,
+.p {
+    font-size: 1em; //18px
+    line-height: 1.5em; //27px
+    font-weight: 300; //light
+    // margin-top: 1.5em;//27px
+    margin-top: 0.75em;
+    margin-bottom: 0em; // color:$lavendergray;
+}
+
+.h6,
+h6 {
+    font-size: 0.77em; //14px
+}
+
+.h7{
+    font-size: 0.6em; //14px
+}
+.highlighted {
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+//links
+a {
+    text-decoration: none;
+    &:hover {
+        color: $jasper;
+    }
+    // &:visited{
+    //     color:$onyx;
+    // }
+}
+
+.dotted {
+    border-bottom: 2px dotted $lavendergray;
+    color:$dark-rasberry;
+    &:hover{
+        color:$jasper;
+    }
+    &:focus{
+        color:$richblack;
+    }
+}
+
+
+
+//lists
+ul ul,
+ol ol,
+ul ol,
+ol ul,
+ol,
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 1em; // list-style: none;
+}
+
+li {
+    line-height: 1.5em;
+    padding-bottom: 3px;
+}
+
+.list--no-bullet {
+    list-style: none;
+}

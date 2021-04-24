@@ -1,0 +1,138 @@
+html,
+body {
+    font-size: 90%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+//display
+.hide {
+    display: none;
+}
+
+.fix {
+    display: block;
+    position: relative !important;
+    margin-right: 0 !important;
+    width: 80% !important;
+}
+
+.margin--top {
+    top: 54px !important;
+}
+
+//pagination buttons 
+.pagination.flex--centered-row {
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.next,
+.prev {
+    background-color: $richblack;
+    color: white;
+}
+
+a.next,
+a.prev {
+    text-decoration: none;
+    display: inline-block;
+    // font-size: 1.5em;
+    padding: 6px 18px;
+    padding-bottom: 9px;
+    &:hover {
+        background-color: $jasper;
+        color: black;
+    }
+    &:focus {
+        color: $bg;
+    }
+}
+
+//positioning
+.flex--centered-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex--centered-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.position--abs {
+    position: absolute !important;
+}
+
+.position--rel {
+    position: relative;
+}
+
+//icons
+.item__icon {
+    width: 27px;
+}
+
+figure {
+    margin: 0;
+}
+
+// display of articles
+.display--half {
+    width: 45%;
+}
+
+.display--third {
+    width: 28%;
+}
+
+//filtering function
+.filters-button-group {
+    padding-top: 54px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button {
+    display: inline-block;
+    padding: 2px 6px;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: $bg;
+}
+.button:active,
+.button.is-checked {
+    background-color: $jasper;
+}
+.button.is-checked {
+    color: $bg;
+}
+.button:active {
+    color: $richblack;
+}
+
+.button-group a {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 1px;
+}
+.button-group .button:first-child {
+    border-radius: 0.5em 0 0 0.5em;
+}
+.button-group .button:last-child {
+    border-radius: 0 0.5em 0.5em 0;
+}

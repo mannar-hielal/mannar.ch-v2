@@ -1,0 +1,55 @@
+
+/* Coolors Exported Palette - coolors.co/383140-04030c-cac7d7-8a8604-f4ed71 */
+
+//theme colors
+
+$onyx: hsla(268%, 13%, 22%, 1);
+$richblack: hsla(247%, 60%, 3%, 1);
+$lavendergray: hsla(251%, 17%, 81%, 1);
+$dark-rasberry: hsla(334, 52%, 36%, 1);
+$jasper: hsla(0, 65%, 54%, 1);
+$light-onyx:#645e6d;
+$bg: #F4F5F6;
+
+//backgrounds color
+.bg--onyx {
+    background-color: $onyx;
+}
+.bg--richblack {
+    background-color: $richblack;
+}
+.bg--lavendergray {
+    background-color: $lavendergray;
+}
+.bg--dark-rasberry {
+    background-color: $dark-rasberry;
+}
+.bg--jasper {
+    background-color: $jasper;
+}
+.bg--light-onyx {
+    background-color: $light-onyx;
+}
+.bg--default-color {
+    background-color: $bg;
+}
+
+.text--dark-rasberry {
+    color: $dark-rasberry;
+}
+.text--lavendergray{
+    color: $lavendergray;
+}
+.text--onyx{
+    color: $onyx;
+}
+.text--richblack{
+    color: $richblack;
+}
+
+.text--default-color{
+    color: $bg; 
+}
+.text--light-onyx{
+    color:$light-onyx;
+}

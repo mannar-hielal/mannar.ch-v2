@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home | Mannar Hielal </title>
+    <meta name="description"
+        content="Hi! i write, share and like topics about: Web Developmnet, Inline Skating, Psychology and Languages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower%7CLibre+Baskerville%7CMontserrat:300,400"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body class="home bg--onyx">
+    <div class="home__wrapper">
+        <div class="home__portrait"></div>
+
+        <div class="home__grid">
+
+            <header class="home__grid--header flex--centered-col bg--richblack">
+                <div class="home__avatar">
+                    <a href="index.html"><img class="avatar__img" src="img/mannar-avatar-tablet.png"
+                            alt="mannar-avatar-tablet"></a>
+                </div>
+
+                <h4 class="header__greet text--lavendergray">Hi, i am</h4>
+
+                <h1 class="header__logo">
+                    <a class="text--default-color" href="index.html">Mannar Hielal</a>
+                </h1>
+
+                <h4 class="header__slogan text--center text--lavendergray">I started my babysteps at 33, again.</h4>
+
+                <a class="h4 header__btn btn--s" href="about.html">Read My Story</a>
+            </header>
+
+            <a class="home__grid--blog bg--lavendergray flex--centered-col text--onyx" href="blog.html">
+                <img class="grid__icon blog__icon" src="img/icons/blog-icon.svg" alt="blog-icon">
+
+                <h2 class="grid__title h4">Blog</h2>
+            </a>
+
+            <a class="home__grid--toplikes bg--light-onyx flex--centered-col text--default-color" href="toplikes.html">
+                <img class="grid__icon toplikes__icon" src="img/icons/toplikes-icon.svg" alt="toplikes-icon">
+
+                <h2 class="grid__title h4">Top Likes</h2>
+            </a>
+
+            <a class="home__grid--portfolio bg--dark-rasberry flex--centered-col text--default-color"
+                href="portfolio.html">
+                <img class="grid__icon portfolio__icon" src="img/icons/portfolio-icon.svg" alt="portfolio-icon">
+
+                <h2 class="grid__title h4">Portfolio</h2>
+            </a>
+
+            <section class="home__grid--latest bg--default-color">
+                <a class="twitter-timeline" href="https://twitter.com/dragonixgirl?ref_src=twsrc%5Etfw"
+                    data-width="100%" data-height="100%">Tweets by dragonixgirl</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+
+            <div class="home__grid--game game"></div>
+        </div>
+    </div>
+
+    <footer class="footer flex--centered-row bg--richblack">
+        <ul class="footer__list flex--centered-row list--no-bullet">
+            <li>
+                <a href="index.html">
+                    <div class="item--home"></div>
+                </a>
+            </li>
+
+            <li class="item__icon ">
+                <a href="mailto:adminwithu@gmail.com" target="_blank">
+                    <div class="item--email"></div>
+                </a>
+            </li>
+
+            <li class="item__icon">
+                <a href="https://www.linkedin.com/in/mannar-hielal/" target="_blank">
+                    <div class="item--linkedin"></div>
+                </a>
+            </li>
+
+            <li class="item__icon">
+                <a href="https://www.facebook.com/mannar.hielal" target="_blank">
+                    <div class="item--fb"></div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/isotope-docs.min.js"></script>
+
+    <script src="blockrain/blockrain.jquery.js"></script>
+    <script>
+        $('.game').blockrain();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5825950-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-5825950-10');
+    </script>
+
+</body>
+
+</html>

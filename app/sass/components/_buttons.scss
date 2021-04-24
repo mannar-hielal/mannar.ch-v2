@@ -1,0 +1,87 @@
+/*------------------------------------*\
+  #button
+\*------------------------------------*/
+
+//$padding-ver,$padding-hor,$radius,$border-color,$link-color
+@mixin button($padding-ver, $padding-hor, $radius, $border-color, $link-color) {
+    padding: $padding-ver $padding-hor;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    color: $link-color;
+}
+
+.btn--s,
+%btn--s {
+    @include button(7px, 14px, 25px, $jasper, $jasper);
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $bg;
+        background-color: $jasper;
+    }
+    &:active {
+        color: $richblack;
+    }
+}
+
+
+
+/*------------------------------------*\
+  #hash tags
+\*------------------------------------*/
+
+//$padding-ver,$padding-hor,$radius,$border-color,$link-color
+.tag-list__link {
+    @include button(4px, 0px, 14px, none, $lavendergray);
+    color: $lavendergray;
+    &:before {
+        content: "#";
+    }
+    // &:hover,
+    // &:focus {
+    //     text-decoration: none;
+    //     color: $light-onyx;
+    // }
+    &:active {
+        color: $richblack;
+    }
+}
+// comments count styling
+.disqus{
+    color:$lavendergray;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $light-onyx;
+    }
+    &:active {
+        color: $richblack;
+    }
+}
+/*------------------------------------*\
+  #icons
+\*------------------------------------*/
+
+%item__icon {
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+}
+
+/*------------------------------------*\
+  #read more arrow
+\*------------------------------------*/
+
+.arrow--right{
+    &:after{
+        content: " ";
+        display: inline-block;
+        background: url("../img/icons/arrow-right-small.svg") no-repeat top center;
+        width: 7px;
+        height: 11.67px;
+        position: relative;
+        // right:0px;
+        // top:7px;
+        }
+}

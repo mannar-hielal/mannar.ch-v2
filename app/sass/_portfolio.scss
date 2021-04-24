@@ -1,0 +1,253 @@
+/*------------------------------------*\
+  #mobile view
+\*------------------------------------*/
+
+.portfolio__grid {
+    @include grid(repeat(4, 1fr), repeat(7, minmax(27px, auto)), 14px);
+    min-height: 100%;
+}
+
+// filter group styling
+.button {
+    padding: 2px 6px;
+}
+
+.portfolio__grid .grid__main {
+    @include grid__item(1, 5, 1, 8);
+    margin: 27px 14px 0 14px;
+}
+
+.article-card {
+    margin-bottom: 27px;
+    border-radius: 3px;
+    padding: 14px;
+    position: static !important;
+    left:inherit !important;
+    top:inherit !important;
+}
+
+.article-grid .flex--centered-row {
+    padding: 0 14px;
+}
+
+.article-card__content {
+    position: relative;
+}
+
+h2.article-card__title {
+    margin: 0;
+}
+
+.article-card__fig {
+    text-align: center;
+}
+
+.article-card__img {
+    max-width: 100%;
+}
+
+.article-card__link {
+    &:hover {
+        color: $onyx;
+    }
+}
+
+.article-card__tag-list {
+    padding-left: 0;
+}
+
+.article-card__tag-list li {
+    display: inline;
+}
+
+.article-card__body {
+    margin-bottom: 14px;
+}
+
+.article-grid.flex--centered-row {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/*------------------------------------*\
+  #tablet view
+\*------------------------------------*/
+
+@media screen and (min-width:769px) {
+    html,
+    body {
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    .portfolio__grid {
+        @include grid(repeat(7, 1fr), repeat(7, minmax(27px, auto)), 27px);
+        min-height: 100%;
+    }
+    
+    // filter group styling
+    .filters-button-group {
+        padding-top: 81px;
+    }
+
+
+    .portfolio__grid .grid__main {
+        @include grid__item(1, 8, 1, 8);
+        margin: 54px 27px 0 27px;
+    }
+
+    .article-card {
+        margin-bottom: 54px;
+    }
+    .article-grid .article-card,
+    .article-card--hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-grid .article-card .article-card__content,
+    .article-card--hero .article-card__content {
+        width: 100%;
+    }
+    .article-card__content.flex--centered-col {
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 66%; // background-color: pink;
+    }
+    .article-card__fig {
+        padding-right: 27px; // width: 100%;
+    }
+    .article-card__img {
+        max-width: 100%;
+    }
+    .article-card .article-card__tag-list {
+        margin-top: 7px;
+    }
+    .article-card__title {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*------------------------------------*\
+  #desktop view
+\*------------------------------------*/
+
+@media screen and (min-width:1024px) {
+    html,
+    body {
+        font-size: 120%;
+    }
+    // filter group styling
+    .filters-button-group {
+        padding-top: 108px;
+    }
+    .button {
+        padding: 7px 14px;
+    }
+
+    .portfolio__grid .grid__main {
+        margin: 81px 108px 54px 108px;
+    }
+
+    .article-grid.flex--centered-row {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .article-card__content.flex--centered-col {
+        padding-top: 14px;
+    }
+    .article-grid .article-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 46%;
+        height: 550px;
+        justify-content: space-between;
+        margin-bottom: 81px; // margin-right:27px;
+    }
+    .article-card:nth-of-type(3n+3) {
+        margin-right: 0px;
+    }
+    .article-card--hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 81px;
+    }
+    .article-card--hero .article-card__content {
+        align-self: center;
+        margin-left: 27px;
+    }
+    .article-card__fig {
+        padding-right: 0;
+    }
+    .article-card__img {
+        max-width: 100%;
+    }
+    h3.article-card__title {
+        font-size: 1.2em; //22px
+        line-height: 1.5em; //27px
+    }
+    .article-card--hero .btn--s {
+        @include button(14px, 27px, 25px, $jasper, $jasper);
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $bg;
+            background-color: $jasper;
+        }
+        &:active {
+            color: $richblack;
+        }
+    }
+}
+
+/*------------------------------------*\
+  #cinema view
+\*------------------------------------*/
+
+@media screen and (min-width:1560px) {
+    .article-grid .article-card {
+        max-width: 30%;
+    }
+}
+
+
+/*------------------------------------*\
+  #IE11 fix in desktop view
+\*------------------------------------*/
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .portfolio__grid .grid__main .article-grid {
+        margin-top: 81px;
+    }
+    .grid__main .article-card {
+        max-width: 100%;
+        height: auto;
+        margin: 27px auto;
+    }
+    .grid__main .article-card__img {
+        width: 95%;
+    }
+    .grid__main .article-card {
+        width: 80%;
+    }
+    .grid__main .article-grid .article-card .article-card__body,
+    .article-card--hero .article-card__body,
+    .article-card--hero .article-card__title {
+        width: 98%;
+    }
+    .grid__main .article-card--hero {
+        max-width: 80%;
+        margin-top: 108px;
+        margin: 108px auto 27px auto;
+    }
+    .menu__row .menu__item {
+        @include button(39px, 7px, 0, inherit, $bg);
+    }
+}

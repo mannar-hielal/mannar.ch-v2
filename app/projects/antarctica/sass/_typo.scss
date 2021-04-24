@@ -1,0 +1,86 @@
+
+   html, .root {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    }
+  body, .article {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    // max-width:80%;
+    font-family: Helvetica, sans-serif;
+    font-weight: inherit;
+    
+  }
+  h1, .h1 {
+    font-size: 31px;
+    line-height: 48px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: inherit;
+  }
+  h2, .h2 {
+    font-size: 25px;
+    line-height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: inherit;
+  }
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: inherit;
+  }
+  h4, .h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  h5, .h5 {
+    font-size: 12.8px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: inherit;
+
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-weight: inherit;
+
+  }
+  ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: inherit;
+  }
+  
+  /* Let's make sure all's aligned */
+  hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+  }
+  a, b, i, strong, em, small, code {
+    line-height: 0;
+  }
+  sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }

@@ -1,0 +1,1 @@
+This is an optimized edition of my peronal page mannar.ch
