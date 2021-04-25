@@ -1,3 +1,4 @@
+import './../css/style.css';
 $(function () {
     // register a service
     if ('serviceWorker' in navigator) {
