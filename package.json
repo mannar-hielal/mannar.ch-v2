@@ -1,31 +1,43 @@
 {
-  "name": "mannar-portfolio",
+  "name": "mannar.ch-v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an optimized edition of my peronal page mannar.ch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinous22/portfolio.git"
+    "url": "git+https://github.com/mannar-hielal/mannar.ch-v2.git"
   },
-  "author": "Mannar Hielal",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vinous22/portfolio/issues"
+    "url": "https://github.com/mannar-hielal/mannar.ch-v2/issues"
   },
-  "homepage": "https://github.com/vinous22/portfolio#readme",
+  "homepage": "https://github.com/mannar-hielal/mannar.ch-v2#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "run-sequence": "^2.2.1"
-  },
-  "dependencies": {
-    "gulp-util": "^3.0.8"
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "blockrain": "^0.2.0",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "jquery-bridget": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
