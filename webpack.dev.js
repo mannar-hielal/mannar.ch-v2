@@ -7,6 +7,6 @@ module.exports = merge(commonConfig, {
     mode: 'development',
     output: {
         path: require('path').resolve(__dirname, 'dist'),
-        filename: 'bundle-dev.js'
+        filename: '[name].bundle-dev.js'
     }
 });

@@ -24,7 +24,9 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "eslint": "^7.25.0",
+    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "jquery": "^3.6.0",
     "node-sass": "^5.0.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
@@ -33,5 +35,8 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "isotope-layout": "^3.0.6"
   }
 }

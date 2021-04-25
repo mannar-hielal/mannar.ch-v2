@@ -92,5 +92,3 @@ $(function () {
         deferredPrompt = e;
     });
 });
-import {mssg} from './test';
-console.log(mssg);

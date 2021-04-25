@@ -7,7 +7,8 @@ module.exports = merge(commonConfig, {
     mode: 'production',
     output: {
         path: require('path').resolve(__dirname, 'dist'),
-        filename: 'js/bundle.[contenthash].js',
+        filename: 'js/[name].bundle.[contenthash].js',
+        assetModuleFilename: 'images/[hash][ext]',
         clean: true
     }
 });

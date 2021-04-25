@@ -3,16 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     // define entry point
     entry: {
-        main: './app/js/main.js'
+        main: './app/js/main.js',
+        vendor: './app/js/vendor.js'
     },
     // define output point
     output: {
         path: require('path').resolve(__dirname,'./dist'),
-        filename: 'bundle.[contenthash].js'
+        filename: '[name].[contenthash].bundle.js',
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: './app/index.html'
-    })],
+    stats: {
+        children: true,
+    },
     module:{
         rules:[
             {
@@ -33,13 +34,17 @@ module.exports = {
                 ],
             },
             {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
                 test: /\.(png|jpg|gif)$/i,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
                             limit: 8192,
-                            name: 'images/[hash].[ext][query]'
+                            name: 'images/[hash].[ext]'
                         },
                     },
                 ],
@@ -51,11 +56,15 @@ module.exports = {
                         loader: 'url-loader',
                         options: {
                             encoding: false,
-                            name: 'images/[hash].[ext][query]'
+                            name: 'svg/[hash].[ext]'
                         },
                     },
                 ],
             },
+
         ]
     },
+    plugins: [new HtmlWebpackPlugin({
+        template: './app/index.html'
+    })],
 };
