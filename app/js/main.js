@@ -91,4 +91,7 @@ $(function () {
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
     });
+
+    // game
+    $('.game').blockrain();
 });
