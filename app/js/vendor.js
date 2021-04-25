@@ -1,2 +1,2 @@
-import 'isotope-layout';
 import 'jquery';
+import './isotope';
