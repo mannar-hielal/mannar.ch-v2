@@ -10,9 +10,9 @@ module.exports = {
         path: require('path').resolve(__dirname,'./dist'),
         filename: 'bundle.[contenthash].js'
     },
-    plugins: [new HtmlWebpackPlugin()],
-    mode: 'development',
-    devtool: 'inline-source-map',
+    plugins: [new HtmlWebpackPlugin({
+        template: './app/index.html'
+    })],
     module:{
         rules:[
             {
@@ -34,7 +34,4 @@ module.exports = {
             },
         ]
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: './app/index.html'
-    })],
 };
