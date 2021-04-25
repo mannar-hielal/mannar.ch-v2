@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
+var webpack = require('webpack');
 
 function generateHtmlPlugins (templateDir) {
     // Read files in template directory
@@ -74,5 +75,5 @@ module.exports = {
             },
         ]
     },
-    plugins: [].concat(htmlPlugins)
+    plugins: [new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})].concat(htmlPlugins)
 };
