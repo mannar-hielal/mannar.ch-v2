@@ -1,0 +1,25 @@
+{
+  "name": "mannar.ch-v2",
+  "version": "1.0.0",
+  "description": "This is an optimized edition of my peronal page mannar.ch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannar-hielal/mannar.ch-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mannar-hielal/mannar.ch-v2/issues"
+  },
+  "homepage": "https://github.com/mannar-hielal/mannar.ch-v2#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  }
+}

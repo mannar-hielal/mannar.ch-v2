@@ -1,0 +1,36 @@
+/* globals jQuery, $, waitForKeyElements */
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jquery": true // add jquery to global env
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ], // 4 spaces
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ], // use single quote
+        "semi": [
+            "error",
+            "always"
+        ], // use semi colons
+        "eol-last": [
+            "error",
+            "always"
+        ] // add new line at end of file
+    }
+}
