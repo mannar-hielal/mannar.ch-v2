@@ -1,4 +1,6 @@
-module.exports={
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
     // define entry point
     entry: {
         main: './app/js/main.js'
@@ -6,8 +8,9 @@ module.exports={
     // define output point
     output: {
         path: require('path').resolve(__dirname,'./dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.[contenthash].js'
     },
+    plugins: [new HtmlWebpackPlugin()],
     mode: 'development',
     devtool: 'inline-source-map',
     module:{
@@ -30,5 +33,8 @@ module.exports={
                 ],
             },
         ]
-    }
+    },
+    plugins: [new HtmlWebpackPlugin({
+        template: './app/index.html'
+    })],
 };
