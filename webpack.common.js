@@ -35,33 +35,22 @@ module.exports = {
             },
             {
                 test: /\.html$/i,
-                loader: 'html-loader',
+                loader: 'html-loader'
             },
             {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                dependency: { not: ['url'] },
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: 'file-loader',
                         options: {
-                            limit: 8192,
-                            name: 'images/[hash].[ext]'
-                        },
+                            name: '[name][contenthash].[ext]',
+                            outputPath: 'images'
+                        }
                     },
                 ],
+                type: 'javascript/auto'
             },
-            {
-                test: /\.svg$/i,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            encoding: false,
-                            name: 'svg/[hash].[ext]'
-                        },
-                    },
-                ],
-            },
-
         ]
     },
     plugins: [new HtmlWebpackPlugin({
