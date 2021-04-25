@@ -3,7 +3,8 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "jquery": true // add jquery to global env
+        "jquery": true, // add jquery to global env
+        "node": true
     },
     "extends": [
         "eslint:recommended"
@@ -14,8 +15,8 @@
     "rules": {
         "indent": [
             "error",
-            4
-        ], // 4 spaces
+            2
+        ], // 2 spaces
         "linebreak-style": [
             "error",
             "unix"
