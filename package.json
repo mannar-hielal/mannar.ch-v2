@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/mannar-hielal/mannar.ch-v2#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.25.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0"
