@@ -3,6 +3,8 @@
 const commonConfig = require('./webpack.common');
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+
 
 module.exports = merge(commonConfig, {
     mode: 'production',
@@ -26,6 +28,39 @@ module.exports = merge(commonConfig, {
                     'css-loader',
                     'sass-loader'
                 ],
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    {
+                        loader: ImageMinimizerPlugin.loader, // compresses images
+                        options: {
+                            severityError: 'warning', // Ignore errors on corrupted images
+                            minimizerOptions: {
+                                plugins: [
+                                    ['gifsicle', { interlaced: true }],
+                                    ['mozjpeg', { progressive: true , quality: 60}],
+                                    [
+                                        'pngquant',
+                                        {
+                                            quality: [0.6, 0.8],
+                                        },
+                                    ],
+                                    [
+                                        'svgo',
+                                        {
+                                            plugins: [
+                                                {
+                                                    removeViewBox: false,
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                ],
+                            },
+                        }
+                    },
+                ]
             }
         ]
     }
