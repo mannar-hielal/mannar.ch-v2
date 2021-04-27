@@ -7,7 +7,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
 
-
 module.exports = merge(commonConfig, {
     mode: 'production',
     output: {
@@ -24,6 +23,71 @@ module.exports = merge(commonConfig, {
             base: path.resolve(__dirname, 'dist'),
             src: 'index.html',
             dest: 'index.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'blog.html',
+            dest: 'blog.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'about.html',
+            dest: 'about.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: '01blog-vochabular.html',
+            dest: '01blog-vochabular.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'portfolio.html',
+            dest: 'portfolio.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'toplikes.html',
+            dest: 'toplikes.html',
             inline: true,
             minify: true,
             extract: true,
