@@ -1,15 +1,17 @@
 // this runs with npm start build
 // it throws out a dist dic with minified js and hashed js file name
 const commonConfig = require('./webpack.common');
+const path = require('path');
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
 
 
 module.exports = merge(commonConfig, {
     mode: 'production',
     output: {
-        path: require('path').resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.[contenthash].js',
         assetModuleFilename: 'images/[name][hash][ext]',
         clean: true
@@ -17,6 +19,19 @@ module.exports = merge(commonConfig, {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'index.html',
+            dest: 'index.html',
+            inline: true,
+            minify: true,
+            extract: true,
+            width: 375,
+            height: 565,
+            penthouse: {
+                blockJSRequests: false,
+            }
         })
     ],
     module: {
