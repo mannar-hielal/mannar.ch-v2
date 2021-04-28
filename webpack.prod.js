@@ -38,9 +38,6 @@ module.exports = merge(commonConfig, {
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
-        new PurgecssPlugin({
-            paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
-        }),
         new HtmlCriticalWebpackPlugin({
             base: path.resolve(__dirname, 'dist'),
             src: 'index.html',
@@ -118,7 +115,10 @@ module.exports = merge(commonConfig, {
             penthouse: {
                 blockJSRequests: false,
             }
-        })
+        }),
+        new PurgecssPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+        }),
     ],
     module: {
         rules: [
