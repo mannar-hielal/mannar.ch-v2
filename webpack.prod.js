@@ -6,6 +6,13 @@ const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob');
+
+const PATHS = {
+    src: path.join(__dirname, 'app')
+};
+
 
 module.exports = merge(commonConfig, {
     mode: 'production',
@@ -15,9 +22,24 @@ module.exports = merge(commonConfig, {
         assetModuleFilename: 'images/[name][hash][ext]',
         clean: true
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                styles: {
+                    name: 'styles',
+                    test: /\.css$/,
+                    chunks: 'all',
+                    enforce: true
+                }
+            }
+        }
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
+        }),
+        new PurgecssPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
         }),
         new HtmlCriticalWebpackPlugin({
             base: path.resolve(__dirname, 'dist'),
