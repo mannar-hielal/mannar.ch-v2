@@ -8,7 +8,12 @@
 .single-post .article-grid .article-card,.single-post .article-grid .article-card--hero{
   flex-direction: column;
   margin-bottom: 14px;
+
 }
+.article-card--hero figure{
+  margin: 0 auto;
+}
+
 .single-post .article-card__content.flex--centered-col{
   height: 100%;
   margin-top:27px;
