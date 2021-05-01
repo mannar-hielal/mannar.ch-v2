@@ -101,5 +101,12 @@ module.exports = {
                 location: 'analytics',
                 template_filename: ['index.html','01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
             }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/head.html'),
+                location: 'head',
+                template_filename: ['index.html','01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
         ])].concat(htmlPlugins)
 };
