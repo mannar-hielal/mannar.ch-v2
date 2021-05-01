@@ -87,5 +87,19 @@ module.exports = {
                 location: 'body',
                 template_filename: ['01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
             }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/footer.html'),
+                location: 'footer',
+                template_filename: ['01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/analytics.html'),
+                location: 'analytics',
+                template_filename: ['index.html','01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
         ])].concat(htmlPlugins)
 };
