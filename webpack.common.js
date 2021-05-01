@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
 var webpack = require('webpack');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 
 function generateHtmlPlugins (templateDir) {
     // Read files in template directory
@@ -78,5 +79,13 @@ module.exports = {
             }
         ]
     },
-    plugins: [new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})].concat(htmlPlugins)
+    plugins: [new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'}),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/header.html'),
+                priority: 'high',
+                location: 'body',
+                template_filename: ['01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ])].concat(htmlPlugins)
 };
