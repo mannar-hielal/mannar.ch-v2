@@ -332,7 +332,7 @@ a.home__grid--toplikes,
     }
     .home__portrait {
         display: block;
-        background: url("../img/portrait-bw.png") no-repeat center bottom;
+        background: url("../img/portrait-bw.jpg") no-repeat center bottom;
         background-size: contain; //432px
         min-width: 385px;
     }
@@ -417,11 +417,10 @@ a.home__grid--toplikes,
     }
     .home__portrait {
         display: block;
-        background: url("../img/portrait-bw.png") no-repeat center bottom;
+        background: url("../img/portrait-bw.jpg") no-repeat center bottom;
         background-size: contain;
         min-width: 300px; 
         position: relative;
-
     } 
     .home__avatar {
         display: none;

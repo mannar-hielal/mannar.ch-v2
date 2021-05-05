@@ -1,3 +1,3 @@
-import 'jquery';
 import './isotope';
 import './blockrain';
+import './widgets';

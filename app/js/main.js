@@ -1,4 +1,3 @@
-// import './../css/style.css';
 import './../sass/style.scss';
 var $ = require('jquery');
 

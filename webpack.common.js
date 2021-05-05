@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
 var webpack = require('webpack');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 
 function generateHtmlPlugins (templateDir) {
     // Read files in template directory
@@ -47,15 +48,6 @@ module.exports = {
                 }
             },
             {
-                // test: /\.css$/i,
-                test: /\.s[ac]ss$/i,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ],
-            },
-            {
                 test: /\.html$/i,
                 loader: 'html-loader'
             },
@@ -73,7 +65,48 @@ module.exports = {
                 ],
                 type: 'javascript/auto'
             },
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
+            }
         ]
     },
-    plugins: [new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})].concat(htmlPlugins)
+    plugins: [new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'}),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/header.html'),
+                priority: 'high',
+                location: 'body',
+                template_filename: ['01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/footer.html'),
+                location: 'footer',
+                template_filename: ['01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/analytics.html'),
+                location: 'analytics',
+                template_filename: ['index.html','01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ]),
+        new HtmlWebpackPartialsPlugin([
+            {
+                path: path.join(__dirname, './app/partials/head.html'),
+                location: 'head',
+                template_filename: ['index.html','01blog-vochabular.html', '404.html','about.html','blog.html','portfolio.html','toplikes.html']
+            }
+        ])].concat(htmlPlugins)
 };

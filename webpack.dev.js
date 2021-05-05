@@ -8,5 +8,17 @@ module.exports = merge(commonConfig, {
     output: {
         path: require('path').resolve(__dirname, 'dist'),
         filename: '[name].bundle-dev.js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ],
+            },
+        ]
     }
 });

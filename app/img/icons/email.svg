@@ -1,16 +1,1 @@
-
-<svg width="27px" height="27px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="item--email" transform="translate(-637.000000, -16.000000)">
-            <g id="footer">
-                <g id="Group-7" transform="translate(532.000000, 16.000000)">
-                    <g id="gmail-icon" transform="translate(105.000000, 0.000000)">
-                        <path d="M27,0 C12.08825,0 0,12.08825 0,27 C0,41.91175 12.08825,54 27,54 C41.91175,54 54,41.91175 54,27 C54,12.08825 41.91175,0 27,0 Z" id="Shape" fill="#645E6D" fill-rule="nonzero"></path>
-                        <polygon id="Path" fill="#04030C" points="39.16425 15 26.99 24.6245 14.41975 15"></polygon>
-                        <path d="M40.41675,39 L13.16675,39 L13.16675,19.06475 L25.72775,28.59225 C26.0645,28.84975 26.56275,28.9785 26.9645,28.9785 C27.37575,28.9785 27.73275,28.8435 28.07325,28.5745 L40.41675,18.7555 L40.41675,39 Z" id="Path" fill="#04030C"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="27" height="27" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M27 0C12.088 0 0 12.088 0 27s12.088 27 27 27 27-12.088 27-27S41.912 0 27 0z" fill="#645E6D" fill-rule="nonzero"/><path fill="#04030C" d="M39.164 15L26.99 24.625 14.42 15z"/><path d="M40.417 39h-27.25V19.065l12.56 9.527c.337.258.836.387 1.238.387.41 0 .768-.136 1.108-.404l12.344-9.82V39z" fill="#04030C"/></g></svg>
