@@ -1,13 +1,12 @@
 # My Personal Website
-[mannar.ch](http://www.mannar.ch)
 
 Hi :blush:
 
-This was a simple personal website that i did in 2018 throughwhich i learned HTML, CSS , SASS & JS (v1.0)
+[mannar.ch](http://www.mannar.ch) was a simple personal website that i did in 2018 (v1.0) through which i learned HTML, CSS , SASS & JS.
 
-*   In 2021 April, i integegrated Webppack to boost performance, tagged it with v2.0
+*   In 2021 April, i integegrated Webppack to boost performance, tagged it with v2.0.
 
-*  Then i applied the best practices of web perfomance optimization, which i tagged it with v2.1
+*  Then i applied the best practices of web perfomance optimization, which i tagged it with v2.1.
 
 ![](/mannar.ch-responsive.png)
 
@@ -27,14 +26,19 @@ To compile and create the distribution files of the website i used Webpack 5.35 
 ## Performance Comparision before & after
 ### v1.0
 ![](/mannar.ch-performance-v1.0.png)
--   the old website used to start render after 5.9s and it takes 111s to fully load (1min51sec)
--   Google Lighthouse rating was 63 (the best rating is 100)
+-   the old website (v1.0) used to start render after 5.9s and it takes 111s to fully load (1min51sec).
+-   Google Lighthouse rating was 63 (the best rating is 100).
 ### v2.1
 ![](/mannar.ch-performance-v2.1.png)
--   the new website with the webpack and applied web perfromance optimization pratices starts rendering in just 1.5s and loads fully in 24s.
--   Google Lighthouse rating is pushed to 85
+-   the new website (v2.1) with the webpack and applied web perfromance optimization pratices starts rendering in just 1.5s and loads fully in 24s.
+-   Google Lighthouse rating is pushed to 85.
 
 ## Resources used
 *   [Performance Audit at web.dev](https://web.dev/lighthouse-performance/)
 
 *   [Build Faster Websites Tutorial by Luke Harrison](https://www.udemy.com/course/building-faster-websites-getting-started-with-web-performance/)
+
+## Thanks
+The project is open source, if you have question to the webpack config, don't hesitate to get in touch with me.
+
+Cheers :wave: :sparkles:
