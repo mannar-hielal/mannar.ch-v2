@@ -14,6 +14,7 @@
 %btn--s {
     @include button(7px, 14px, 25px, $jasper, $jasper);
     transition: 0.3s;
+    font-size: 0.75rem;
     &:hover,
     &:focus {
         text-decoration: none;
@@ -67,21 +68,4 @@
     background-size: cover;
     width: 27px;
     height: 27px;
-}
-
-/*------------------------------------*\
-  #read more arrow
-\*------------------------------------*/
-
-.arrow--right{
-    &:after{
-        content: " ";
-        display: inline-block;
-        background: url("../img/icons/arrow-right-small.svg") no-repeat top center;
-        width: 7px;
-        height: 11.67px;
-        position: relative;
-        // right:0px;
-        // top:7px;
-        }
 }
