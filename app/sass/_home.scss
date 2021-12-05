@@ -46,12 +46,25 @@
     }
 }
 
-.home__grid--latest {
+.home__grid--skills {
     @include grid__item(1, 5, 8, 11);
     margin: 0 14px 14px 14px; // padding: 0 14px;
     // padding-bottom:20px;
     overflow: hidden;
-    background-color: $onyx;
+
+    header {
+        color: white;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -170,6 +183,27 @@ a.home__grid--toplikes,
     display: none;
 }
 
+
+.iconbox {
+    display: inline-block;
+    flex-grow: 1;
+    height: 5rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 5rem;
+    background-color: #fff;
+    border-radius: 0.425rem;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    position: relative;
+
+    svg {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
 /*------------------------------------*\
   #tablet view
 \*------------------------------------*/
@@ -236,7 +270,7 @@ a.home__grid--toplikes,
         -ms-grid-row-span: 2;
         margin: 0;
     }
-    .home__grid--latest {
+    .home__grid--skills {
         @include grid__item(1,
         8,
         6,
@@ -246,6 +280,11 @@ a.home__grid--toplikes,
         -ms-grid-row: 6;
         -ms-grid-row-span: 3;
         margin: 0 33px 33px 33px; // padding:0 27px 27px 27px;
+
+        ul {
+            justify-content: start;
+            margin-top: 2rem;
+        }
     }
     .avatar__img {
         width: 100px;
@@ -301,7 +340,7 @@ a.home__grid--toplikes,
         6);
         margin-right: 54px;
     }
-    .home__grid--latest {
+    .home__grid--skills {
         @include grid__item(4,
         10,
         6,
@@ -397,7 +436,7 @@ a.home__grid--toplikes,
         margin-left: 27px;
         margin-bottom: 27px;
     }
-    .home__grid--latest {
+    .home__grid--skills {
         -webkit-ms-grid-column: 4;
         -ms-grid-column-span: 6;
         -webkit-ms-grid-row: 6;
