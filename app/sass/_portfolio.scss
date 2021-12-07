@@ -24,6 +24,7 @@
     position: static !important;
     left:inherit !important;
     top:inherit !important;
+    cursor: pointer;
 }
 
 .article-grid .flex--centered-row {
@@ -40,10 +41,13 @@ h2.article-card__title {
 
 .article-card__fig {
     text-align: center;
+    width: 100%;
 }
 
 .article-card__img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .article-card__link {
@@ -118,9 +122,7 @@ h2.article-card__title {
     .article-card__fig {
         padding-right: 27px; // width: 100%;
     }
-    .article-card__img {
-        max-width: 100%;
-    }
+
     .article-card .article-card__tag-list {
         margin-top: 7px;
     }
@@ -185,9 +187,7 @@ h2.article-card__title {
     .article-card__fig {
         padding-right: 0;
     }
-    .article-card__img {
-        max-width: 100%;
-    }
+
     h3.article-card__title {
         font-size: 1.2em; //22px
         line-height: 1.5em; //27px
