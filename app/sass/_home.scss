@@ -7,7 +7,7 @@
 }
 
 .home__grid {
-    @include grid(repeat(4, 1fr), repeat(10, minmax(27px, auto)), 14px);
+    @include grid(repeat(4, 1fr), repeat(12, minmax(27px, auto)), 14px);
 }
 
 .home__grid--header {
@@ -109,6 +109,7 @@
 }
 
 .home__grid--skills {
+    @include grid__item(1, 5, 11, 13);
     color: $lavendergray;
     text-align: center;
 
