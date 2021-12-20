@@ -69,7 +69,7 @@
         }
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
 
             a {
                 color: $richblack;
@@ -83,7 +83,7 @@
         .article-card__fig {
             border-radius: 0.25rem;
             overflow: hidden;
-            max-height: 14rem;
+            max-height: 21rem;
             margin-bottom: 1rem;
 
             .img.article-card__img {
