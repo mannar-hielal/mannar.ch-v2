@@ -14,7 +14,8 @@
 %btn--s {
     @include button(7px, 14px, 25px, $jasper, $jasper);
     transition: 0.3s;
-    font-size: 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 500;
     &:hover,
     &:focus {
         text-decoration: none;

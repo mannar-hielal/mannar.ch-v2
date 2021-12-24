@@ -85,28 +85,28 @@ module.exports = {
             path: path.join(__dirname, './app/partials/header.html'),
             priority: 'high',
             location: 'body',
-            template_filename: ['01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
+            template_filename: ['02landing-page-educa.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
         }
     ]),
     new HtmlWebpackPartialsPlugin([
         {
             path: path.join(__dirname, './app/partials/footer.html'),
             location: 'footer',
-            template_filename: ['index.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
+            template_filename: ['index.html', '02landing-page-educa.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
         }
     ]),
     new HtmlWebpackPartialsPlugin([
         {
             path: path.join(__dirname, './app/partials/analytics.html'),
             location: 'analytics',
-            template_filename: ['index.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
+            template_filename: ['index.html', '02landing-page-educa.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
         }
     ]),
     new HtmlWebpackPartialsPlugin([
         {
             path: path.join(__dirname, './app/partials/head.html'),
             location: 'head',
-            template_filename: ['index.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
+            template_filename: ['index.html', '02landing-page-educa.html', '01blog-vochabular.html', '404.html', 'about.html', 'blog.html', 'portfolio.html', 'toplikes.html']
         }
     ])].concat(htmlPlugins)
 };
