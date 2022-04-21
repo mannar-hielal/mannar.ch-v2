@@ -42,6 +42,10 @@ h2.article-card__title {
 .article-card__fig {
     text-align: center;
     width: 100%;
+
+    &.natureflix {
+        max-width: 24rem;
+    }
 }
 
 .article-card__img {

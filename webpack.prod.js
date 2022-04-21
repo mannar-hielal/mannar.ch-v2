@@ -140,7 +140,7 @@ module.exports = merge(commonConfig, {
                             minimizerOptions: {
                                 plugins: [
                                     ['gifsicle', { interlaced: true }],
-                                    ['mozjpeg', { progressive: true , quality: 60}],
+                                    ['mozjpeg', { progressive: true , quality: 90}],
                                     [
                                         'pngquant',
                                         {
